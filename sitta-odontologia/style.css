@@ -6,6 +6,15 @@
    padding: 0px;
 }
 
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+body {
+   word-wrap: break-word;
+   overflow-wrap: break-word;
+}
+
 header {
    background-color: black;
    width: 100%;
@@ -36,20 +45,69 @@ nav a {
 .primeira-imagem {
    background-image: url("imagens/faxada.jpg");
    width: 100%;
-   height: 100vh;
+   height: 89vh;
 }
 
 .primeira-imagem h1 {
    text-align: center;
    font-family: Arial, Helvetica, sans-serif;
    font-size: 3em;
-   margin-top: 50px;
+   padding-top: 60px;
 }
 
 .primeira-imagem h2 {
    text-align: center;
    font-family: Arial, Helvetica, sans-serif;
    font-size: 1.5em;
+   padding-top: 20px;
+}
+
+#sobre {
+   padding: 40px 20px 0;
+}
+
+.tudo-sobre {
+   width: 100%;
+   margin: 0 auto;
+}
+
+.sobre-clinica {
+   width: 100%;
+   max-width: 760px;
+   margin: 0 auto;
+   padding: 10px;
+}
+
+.sobre-clinica h2 {
+   text-align: center;
+   padding-top: 40px;
+}
+
+.sobre-clinica p {
+   margin: 15px 0px;
+   text-align: justify;
+   text-indent: 30px;
+   line-height: 2em;
+   font-size: 1em;
+}
+
+.sobre-encontrar {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.sobre-encontrar h3 {
+   font-weight: 500;
+   text-transform: uppercase;
+}
+
+.sobre-encontrar img {
+   height: 250px;
+}
+
+.lista {
+   margin: 0 40px;
 }
 
 footer {
