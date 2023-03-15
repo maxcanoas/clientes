@@ -67,11 +67,10 @@ nav a {
    align-items: center;
 }
 
-.midias img{
-
-padding: 5px;
-width: 50px;
-height: 50px;
+.midias img {
+   padding: 5px;
+   width: 50px;
+   height: 50px;
 }
 
 #sobre,
@@ -194,7 +193,6 @@ picture {
    margin: 0 auto;
 }
 
-
 .missao-visao {
    width: 100%;
    max-width: 760px;
@@ -214,7 +212,6 @@ picture {
    line-height: 2em;
    font-size: 1em;
 }
-
 
 .localizacao {
    text-align: center;
@@ -250,4 +247,25 @@ footer {
    text-transform: uppercase;
    text-decoration: none;
    text-align: center;
+}
+
+@media (max-width: 768px) {
+   .box-visao-geral {
+      height: 300px;
+   }
+   .sobre-encontrar img {
+      display: none;
+   }
+   .box-especialidades {
+      justify-content: center;
+   }
+   .box-especialidade {
+      width: calc(100% / 2 - 40px);
+   }
+
+   .topo-links {
+      width: 100%;
+      border-top: 1px solid #009fa5;
+      justify-content: space-between;
+   }
 }
