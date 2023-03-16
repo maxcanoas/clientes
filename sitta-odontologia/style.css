@@ -50,15 +50,17 @@ nav a {
 }
 
 .primeira-imagem h1 {
+   color: #2c1e01;
    text-align: center;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Fahkwang', sans-serif;
    font-size: 3em;
    padding-top: 60px;
 }
 
 .primeira-imagem h2 {
    text-align: center;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Fahkwang', sans-serif;
+   color: #2c1e01;;
    font-size: 1.5em;
    padding-top: 20px;
 }
@@ -85,6 +87,7 @@ nav a {
 }
 
 .sobre-clinica {
+   font-family: 'Fahkwang', sans-serif;
    width: 100%;
    max-width: 760px;
    margin: 0 auto;
@@ -105,6 +108,7 @@ nav a {
 }
 
 .sobre-encontrar {
+   font-family: 'Fahkwang', sans-serif;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -113,6 +117,7 @@ nav a {
 .sobre-encontrar h3 {
    font-weight: 500;
    text-transform: uppercase;
+   padding-bottom: 20px;
 }
 
 .sobre-encontrar img {
@@ -130,6 +135,7 @@ ul {
 
 .tratamentos {
    padding-top: 40px;
+   font-family: 'Fahkwang', sans-serif;
 }
 
 .container-conteudo {
@@ -161,7 +167,7 @@ ul {
 }
 
 .descricao {
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Fahkwang', sans-serif;
    text-align: justify;
    font-size: 0.8em;
    padding: 10px;
@@ -169,6 +175,7 @@ ul {
 
 .equipe,
 .historia {
+   font-family: 'Fahkwang', sans-serif;
    width: 100%;
    max-width: 760px;
    margin: 0 auto;
@@ -200,6 +207,7 @@ picture {
 }
 
 .missao-visao {
+   font-family: 'Fahkwang', sans-serif;
    width: 100%;
    max-width: 760px;
    margin: 0 auto;
@@ -221,7 +229,7 @@ picture {
 
 .localizacao {
    text-align: center;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Fahkwang', sans-serif;
    font-size: 1.5em;
    padding: 40px;
 }
@@ -257,12 +265,14 @@ footer {
 
 @media (max-width: 600px) {
    .primeira-imagem{
-      height: 300px;
+      height: 237px;
+      background-image: url("imagens/faxada-pq.jpg");
       
    }
 
    .primeira-imagem h1{
       font-size: 1.5em;
+      
       
    }
 
