@@ -30,10 +30,11 @@ header {
 }
 
 header nav {
-   border: 1px solid red;
-   margin-left: 50%;
-   padding-bottom: 10px;
-   display: inline-block;
+   display: flex;
+   align-items: center;
+   margin-left: 0;
+   padding: 10px;
+   
 }
 
 nav a {
@@ -116,6 +117,11 @@ nav a {
 
 .sobre-encontrar img {
    height: 250px;
+}
+
+ul {
+   list-style-type: '\2714\00a0\00a0';
+   list-style-position: inside;
 }
 
 .lista {
@@ -250,14 +256,27 @@ footer {
 }
 
 @media (max-width: 600px) {
-   .box-visao-geral {
+   .primeira-imagem{
       height: 300px;
+      
    }
-   .sobre-encontrar img {
+
+   .primeira-imagem h1{
+      font-size: 1.5em;
+      
+   }
+
+   .primeira-imagem h2{
+      font-size: 1em;
+      padding: 10px;
+      
+   }
+   .sobre-encontrar img, .box-especialidade img {
       display: none;
    }
    .box-especialidades {
       justify-content: center;
+
    }
    .box-especialidade {
       width: calc(100% / 2 - 40px);
@@ -267,5 +286,38 @@ footer {
       width: 100%;
       border-top: 1px solid #009fa5;
       justify-content: space-between;
+   }
+
+   .lista h3 {
+      font-size: 1em;
+      text-align: center;
+      padding: 15px;
+   }
+}
+
+@media (max-width: 425px) {
+   .topo .container {
+      flex-direction: column;
+   }
+   .topo-titulo {
+      margin: 10px 0;
+   }
+   .topo-links {
+      width: 100%;
+      border-top: 1px solid #009fa5;
+      justify-content: space-between;
+   }
+   .box-visao-geral {
+      height: 200px;
+   }
+   .box-visao-geral h1 {
+      font-size: 28px;
+   }
+   .box-especialidade {
+      width: 100%;
+   }
+
+   .descricao {
+      font-size: 0.5em;
    }
 }
