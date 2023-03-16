@@ -271,7 +271,7 @@ footer {
       padding: 10px;
       
    }
-   .sobre-encontrar img, .box-especialidade img {
+   .sobre-encontrar img {
       display: none;
    }
    .box-especialidades {
@@ -284,8 +284,7 @@ footer {
 
    .topo-links {
       width: 100%;
-      border-top: 1px solid #009fa5;
-      justify-content: space-between;
+      justify-content: end;
    }
 
    .lista h3 {
@@ -304,8 +303,8 @@ footer {
    }
    .topo-links {
       width: 100%;
-      border-top: 1px solid #009fa5;
-      justify-content: space-between;
+      
+      
    }
    .box-visao-geral {
       height: 200px;
