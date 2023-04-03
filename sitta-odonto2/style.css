@@ -1,0 +1,238 @@
+body {
+   margin: 0;
+   padding: 0;
+   color: #242424;
+   font-family: sans-serif;
+   word-wrap: break-word;
+   overflow-wrap: break-word;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: 900;
+   color: #000;
+}
+
+.wrapper {
+   width: 100%;
+   margin: 0 auto;
+}
+
+main {
+   display: block;
+   background-color: #fff;
+}
+
+.container {
+   width: 100%;
+   max-width: 760px;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+section.module p {
+   margin-bottom: 40px;
+}
+
+section.module:last-child {
+   margin-bottom: 0;
+}
+
+section.module h2 {
+   margin-bottom: 40px;
+   font-size: 30px;
+}
+
+section.module.content {
+   padding: 40px 0;
+   background: #ece7d5;
+}
+
+section.module.parallax {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 100vh;
+   width: 100%;
+   position: relative;
+   overflow: hidden;
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+section.module.parallax::after {
+   content: "";
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 8;
+   background: -moz-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0,
+      rgba(0, 0, 0, 0) 55%,
+      #000 100%
+   );
+   background: -webkit-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0,
+      rgba(0, 0, 0, 0) 55%,
+      #000 100%
+   );
+   background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0,
+      rgba(0, 0, 0, 0) 55%,
+      #000 100%
+   );
+}
+
+section.module.parallax1 {
+   background-image: url("imagens/em-um-dentista-com-um-sorriso.jpg");
+}
+
+section.module.parallax2 {
+   background-image: url("imagens/examinando-boca.jpg");
+}
+
+section.module.parallax3 {
+   background-image: url("imagens/bottox.jpg");
+}
+
+section.module.parallax h1 {
+   color: #fff;
+   text-align: center;
+   font-size: 78px;
+   z-index: 50;
+   text-transform: uppercase;
+}
+
+/*Card*/
+.card {
+   width: 300px;
+   height: 600px;
+   margin: 25px;
+   background-color: #fff;
+   border-radius: 20px;
+   overflow: hidden;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+   transition: 0.3s;
+}
+
+.container2 {
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+
+/*Card header*/
+.card-header {
+   width: 100%;
+   height: 200px;
+   overflow: hidden;
+}
+
+.card-img {
+   min-width: 100%;
+   width: auto;
+   height: 100%;
+}
+
+/*Card body*/
+.card-body {
+   height: 170px;
+   padding: 15px;
+   text-align: center;
+   font-family: sans-serif;
+}
+
+.card-tratamento {
+   font-size: 16px;
+   margin: 10px 0;
+}
+
+
+.card-texto {
+   font-size: 12px;
+   width: 250px;
+   margin: 0 auto;
+}
+
+/*Card footer*/
+.card-footer {
+   margin-top: 150px;
+   text-align: center;
+   background-color: #000;
+}
+
+.card-footer a {
+   color: #fff;
+   display: block;
+   padding: 16px;
+   text-decoration: none;
+   font-family: sans-serif;
+   font-weight: 600;
+}
+
+/*Cores Cards*/
+.card-1 .card-footer {
+   background-color: #2740d1;
+}
+
+.card-1 .card-tratamento {
+   color: #2740d1;
+}
+
+.card-2 .card-footer {
+   background-color: #d12761;
+}
+
+.card-2 .card-tratamento {
+   color:#d12761;;
+}
+
+.card-3 .card-footer {
+   background-color: #acce14;
+}
+
+.card-3 .card-tratamento {
+   color:#acce14;;
+}
+
+.card-4 .card-footer {
+   background-color: #f14e0e;
+}
+
+.card-4 .card-tratamento {
+   color:#f14e0e;;
+}
+
+.card-5 .card-footer {
+   background-color: #5e3341;
+}
+
+.card-5 .card-tratamento {
+   color:#5e3341;
+}
+
+.card-6 .card-footer {
+   background-color: #aa0aa2;
+}
+
+.card-6 .card-tratamento {
+   color: #aa0aa2;
+}
+
+/*Animação Hover*/
+.card:hover {
+   transform: scale3d(1.1, 1.1, 1);
+}
