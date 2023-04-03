@@ -141,6 +141,10 @@ section.module.parallax h1 {
    overflow: hidden;
 }
 
+.card-header img {
+   width: 100%;
+}
+
 .card-img {
    min-width: 100%;
    width: auto;
