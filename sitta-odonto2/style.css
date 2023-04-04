@@ -30,6 +30,27 @@ main {
    background-color: #fff;
 }
 
+main p {
+   font-family: 'Fahkwang', sans-serif;
+   text-align: justify;
+   font-size: 1em;
+   padding: 10px;
+}
+
+main h1 {
+   font-family: 'Fahkwang', sans-serif;
+   text-align: justify;
+   font-size: 0.8em;
+   padding: 10px;
+}
+
+main h2 {
+   font-family: 'Fahkwang', sans-serif;
+   text-align: justify;
+   font-size: 0.8em;
+   padding: 10px;
+}
+
 .container {
    width: 100%;
    max-width: 760px;
@@ -104,7 +125,7 @@ section.module.parallax2 {
 }
 
 section.module.parallax3 {
-   background-image: url("imagens/bottox.jpg");
+   background-image: url("imagens/fundo-de-areia-zen-listrado-no-conceito-de-atencao-plena.jpg");
 }
 
 section.module.parallax h1 {
@@ -162,6 +183,7 @@ section.module.parallax h1 {
 .card-tratamento {
    font-size: 16px;
    margin: 10px 0;
+   text-align: center;
 }
 
 
@@ -239,4 +261,16 @@ section.module.parallax h1 {
 /*Animação Hover*/
 .card:hover {
    transform: scale3d(1.1, 1.1, 1);
+}
+
+.lista {
+   border: 1px solid black;
+   border-radius: 0 20px;
+   display: inline-block;
+   padding: 20px;
+}
+
+ul {
+   list-style-type: '\2714\00a0\00a0';
+   list-style-position: inside;
 }
