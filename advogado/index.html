@@ -1,22 +1,127 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Maxwell Rigo Moraes</title>
+	<title>Nome do Escritório de Advocacia</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <header>
-      <nav>
-         
-      </nav>
-   </header>
-   <main>
+	<header>
+		<h1>Nome do Escritório de Advocacia</h1>
+		<nav>
+			<ul>
+				<li><a href="#sobre">Sobre nós</a></li>
+				<li><a href="#servicos">Nossos serviços</a></li>
+				<li><a href="#equipe">Nossa equipe</a></li>
+				<li><a href="#contato">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
 
-   </main>
-   <footer>
+	<main>
+		<section id="sobre">
+			<h2>Sobre nós</h2>
+			<p>O escritório de advocacia Nome do Escritório de Advocacia é especializado em direito civil e empresarial. Nossa equipe de advogados altamente qualificados tem anos de experiência na resolução de questões legais complexas e está empenhada em fornecer aconselhamento jurídico confiável e eficaz para nossos clientes.</p>
+		</section>
 
-   </footer>
+		<section id="servicos">
+			<h2>Nossos serviços</h2>
+			<ul>
+				<li>Direito civil</li>
+				<li>Direito empresarial</li>
+				<li>Direito do trabalho</li>
+				<li>Direito tributário</li>
+				<li>Direito de propriedade intelectual</li>
+			</ul>
+		</section>
+
+		<section id="equipe">
+			<h2>Nossa equipe</h2>
+			<ul>
+				<li>Nome do Advogado 1, Especialista em Direito Civil</li>
+				<li>Nome do Advogado 2, Especialista em Direito Empresarial</li>
+				<li>Nome do Advogado 3, Especialista em Direito do Trabalho</li>
+				<li>Nome do Advogado 4, Especialista em Direito Tributário</li>
+				<li>Nome do Advogado 5, Especialista em Propriedade Intelectual</li>
+			</ul>
+		</section>
+
+		<section id="contato">
+			<h2>Contato</h2>
+			<form action="enviar.php" method="post">
+				<label for="nome">Nome:</label>
+				<input type="text" id="nome" name="nome" required>
+
+				<label for="email">E-mail:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="mensagem">Mensagem:</label>
+				<textarea id="mensagem" name="mensagem" required></textarea>
+
+				<input type="submit" value="Enviar">
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Nome do Escritório de Advocacia. Todos os direitos reservados.</p>
+	</footer>
+   <script>
+      const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
+
+menuToggle.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
+
+const form = document.querySelector('form');
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const messageInput = document.querySelector('#message');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  
+  if (nameInput.value.trim() === '') {
+    showError(nameInput, 'O nome é obrigatório');
+  } else {
+    showSuccess(nameInput);
+  }
+  
+  if (emailInput.value.trim() === '') {
+    showError(emailInput, 'O e-mail é obrigatório');
+  } else if (!isValidEmail(emailInput.value.trim())) {
+    showError(emailInput, 'E-mail inválido');
+  } else {
+    showSuccess(emailInput);
+  }
+  
+  if (messageInput.value.trim() === '') {
+    showError(messageInput, 'A mensagem é obrigatória');
+  } else {
+    showSuccess(messageInput);
+  }
+});
+
+function showError(input, message) {
+  const formControl = input.parentElement;
+  formControl.classList.add('error');
+  const errorElement = formControl.querySelector('.error-message');
+  errorElement.innerText = message;
+}
+
+function showSuccess(input) {
+  const formControl = input.parentElement;
+  formControl.classList.remove('error');
+  formControl.classList.add('success');
+}
+
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+   </script>
 </body>
 </html>

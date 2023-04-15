@@ -1,1 +1,130 @@
 @charset "UTF-8";
+
+/* Estilos para o cabeçalho */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+h1 {
+	margin: 0;
+	font-size: 90px;
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Estilos para as seções */
+section {
+	padding: 40px;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Estilos para o formulário de contato */
+form {
+	margin-top: 40px;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	width: 100%;
+}
+
+input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #444;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    z-index: 1;
+  }
+  
+  nav li {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu-toggle.active .bar:nth-of-type(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .menu-toggle.active .bar:nth-of-type(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.active .bar:nth-of-type(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
