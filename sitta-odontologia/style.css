@@ -52,7 +52,7 @@ nav a {
 }
 
 .primeira-imagem {
-   background-image: url("imagens/faxada.jpg");
+   background-image: url("imagens/novas/faxada.jpg");
    width: 100%;
    height: 89vh;
 }
@@ -276,7 +276,7 @@ footer {
 @media (max-width: 600px) {
    .primeira-imagem{
       height: 237px;
-      background-image: url("imagens/faxada-pq.jpg");
+      background-image: url("imagens/novas/faxada-pq.jpg");
       
    }
 
